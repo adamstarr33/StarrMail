@@ -21,8 +21,27 @@ public class Account {
 		System.out.println("You work in the " + this.department + " department");
 		starrBar();
 		System.out.println("How long of a password can you remember?\nEnter desired password length: ");
+		int firstTry = 0;
+		while(true)
+		{
+		try
+		{
+		if(firstTry!=0)
+		{
+			System.out.println("Enter desired password length: ");
+		}
 		int length = in.nextInt();
 		this.password = generatePass(length);
+		break;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Ohhhhh nooooooo, you didnt enter a valid value! Try again my friend, I believe in you");
+			in.nextLine();
+			firstTry = 1;
+			continue;
+		}
+		}
 		System.out.println("\nYour password is " + this.password + " \nHope no one was lookin at the screen\n");
 		System.out.println("Would you like to change your password, or is that random mess of characters doin it for you?\nEnter 1 to change password\nEnter 0 to keep password");
 		int choice = in.nextInt();
