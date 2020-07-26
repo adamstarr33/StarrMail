@@ -1,3 +1,5 @@
+// Adam Starr
+
 package StarrMail;
 
 import java.util.Random;

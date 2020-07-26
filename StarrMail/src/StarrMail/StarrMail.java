@@ -1,9 +1,11 @@
+//Adam Starr
+
 package StarrMail;
 
 import java.util.Scanner;
 
 public class StarrMail{
-
+//
 	public static void main(String[] args) {
 		System.out.println("Welcome to StarrMail, esteemed user!\nPlease enter first and last name to begin account creation");
 		Scanner in = new Scanner(System.in);
