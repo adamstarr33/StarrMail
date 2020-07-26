@@ -20,7 +20,7 @@ public class Account {
 		this.department = setDepartment();
 		System.out.println("You work in the " + this.department + " department");
 		starrBar();
-		System.out.println("How long of a password can you remember?\nEnter desired password length: ");
+		System.out.println("How long of a password can you remember?\nEnter desired password length(Max length 20: ");
 		int length = in.nextInt();
 		this.password = generatePass(length);
 		System.out.println("\nYour password is " + this.password + " \nHope no one was lookin at the screen\n");
@@ -84,7 +84,7 @@ public class Account {
 		Random rand = new Random();
 		for(int i=0; i<length; i++)
 		{
-			pass[i] = chars.charAt(rand.nextInt(length));
+			pass[i] = chars.charAt(rand.nextInt(42));
 		}
 		return new String(pass);
 				
