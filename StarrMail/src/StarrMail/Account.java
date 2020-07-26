@@ -76,7 +76,7 @@ public class Account {
 		return "";
 	}
 	
-	//Generate a random password of user selected length
+	//Generate a random password of unlimited user selected length
 	private String generatePass(int length)
 	{
 		String chars = "abcdefghijklmnopqrstuvwxyz123456789!@#$%&*";
