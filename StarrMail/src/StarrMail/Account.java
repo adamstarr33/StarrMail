@@ -20,7 +20,7 @@ public class Account {
 		this.department = setDepartment();
 		System.out.println("You work in the " + this.department + " department");
 		starrBar();
-		System.out.println("How long of a password can you remember?\nEnter desired password length(Max length 20: ");
+		System.out.println("How long of a password can you remember?\nEnter desired password length: ");
 		int length = in.nextInt();
 		this.password = generatePass(length);
 		System.out.println("\nYour password is " + this.password + " \nHope no one was lookin at the screen\n");
